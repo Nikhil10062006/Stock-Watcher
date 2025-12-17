@@ -49,12 +49,43 @@ yarn dev
 
 Roadmap / Future Improvements:
 
-* Add user authentication to save favourites across devices
-* Add functionality to remove stocks from favourites
-* Integrate the favourite stocks of the user  in the database
-* Improve UI with styled components or Tailwind CSS
-* Implement alerts/notifications for price 
-* Enable the user to share the lists with their friends
+User Authentication & Account Management:
+* Create user registration (sign-up) screen with backend support
+* Create login screen for existing users
+* Implement secure authentication (JWT / session-based)
+* Display logged-in user details (name, email, username) on the top-right corner
+* Add a header/ribbon component to show user info or login/register buttons
+
+User Dashboard & Navigation:
+* Create a dashboard layout accessible after login
+* Add a global menu to navigate to the “Add Favourite Stocks” form from any page
+* Show helper information (logged-in user email, logout option) in the header
+
+Favourite Stocks Management:
+* Store user-specific favourite stocks in a database
+* Create backend APIs to add, fetch, and manage favourite stocks
+* Display the user’s favourite stock list with real-time prices
+* Allow removing stocks from the favourites list
+
+Real-Time Stock Price Updates:
+* Integrate stock price API (Finnhub or alternative) securely via backend
+* Fetch and update stock prices every 60 seconds automatically
+* Handle API rate limits and error scenarios gracefully
+
+Backend & Data Persistence:
+* Introduce a backend server (Node.js + Express )
+* Design database schemas for users and favourite stocks
+* Persist user data and stock lists across sessions and devices
+
+Sharing & Collaboration:
+* Allow users to share their favourite stock lists with other registered users
+* Enable view-only or editable shared lists
+* Add basic access control for shared lists
+
+UI & UX Improvements:
+* Improve overall UI using Tailwind CSS or component libraries
+* Make the application fully responsive
+* Add loading states, error messages, and success notifications
 
 Notes:
 
