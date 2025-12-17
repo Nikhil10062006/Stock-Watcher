@@ -21,7 +21,7 @@ How to Run:
 1.Clone the repository:
 
 git clone https://github.com/Nikhil10062006/Stock-Watcher
-cd favourite_stock_watcher
+cd Stock-Watcher
 
 
 2.Install dependencies:
